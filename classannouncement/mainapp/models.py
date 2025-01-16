@@ -1,8 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import User
 from django.contrib.postgres.fields import ArrayField
 
-class User(AbstractUser):
+class User(User):
     """
     Custom user model extending Django's AbstractUser.
     Includes additional fields for section and role information.
